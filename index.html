@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITA500</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="vita">
+
+
+        <a href="#" class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+
+
+
+        <header>
+            <div class="left">
+                VITA500
+            </div>
+            <div class="right">
+                <a href="#">About</a>
+                <a href="#">Product</a>
+                <a href="#">Contact us</a>
+            </div>
+        </header>
+
+
+
+
+        <div class="bg">
+            <div class="text">
+                <h1>Special collection
+                    of natural product
+                </h1>
+                <article>
+                    We strive to bring about a sustainable way of making jewelry,
+                    both conscious and enlightened.
+                    We wish to create jewels in a spirit of goodwill.
+                </article>
+                <p>VIEW PRODUCTS</p>
+            </div>
+
+        </div>
+
+
+
+
+        <img src="img-vita.png" class="bottle">
+
+        <div class="pop_bottle">
+            <span>X</span>
+            <img src="img-popup.jpg">
+        </div>
+
+
+        <footer>
+            <img src="ic_twitter.png">
+            <img src="ic_insta.png">
+            <img src="ic_facebook.png">
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    $('.text p').on('click', function () {
+        $('.pop_bottle').addClass('active');
+    });
+    $('.pop_bottle span').on('click', function () {
+        $('.pop_bottle').removeClass('active');
+    });
+
+
+
+
+
+    $('.menu-trigger').on('click', function () {
+        $('header').addClass('active');
+    });
+
+    if($('header').hasClass('active')) {
+
+        $('.menu-trigger').on('click', function () {
+            $('header').removeClass('active');
+        });
+
+    }//if
+
+
+
+</script>
